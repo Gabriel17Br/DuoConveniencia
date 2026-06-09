@@ -1,18 +1,22 @@
 import logo from "../assets/logo.png";
-
-
-<div className="logo-container">
-  <img src={logo} alt="Logo DuoConveniência" className="logo"/>
-  <h2>DuoConveniência</h2>
-</div>
+import "../Styles/NavBar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <h2>DuoConveniência</h2>
+      <div className="logo-container">
+        <img
+          src={logo}
+          alt="Logo DuoConveniência"
+          className="logo"
+        />
+        <h2>
+          Duo<span>Conveniência</span>
+        </h2>
+      </div>
 
-      <ul>
-        <li>Início</li>
+      <ul className="nav-links">
+        <li className="active">Início</li>
         <li>Produtos</li>
         <li>Promoções</li>
         <li>Contato</li>
